@@ -1,5 +1,5 @@
-@charset "utf-8";
-
+﻿@charset "utf-8";
+ 
 html{ font-size: 100px;}
 * {
     margin: 0;
@@ -354,7 +354,6 @@ a.icon > div *:after{position: absolute; content: ""; display: block; }
 .phone > div > span:nth-child(2):after{bottom:5px; width: 28px; height: 20px; background: #fff;  }
 .phone > div > span:nth-child(2):before{left:0; border-radius: 9px 0px 10px 7px ; transform: rotateZ(-11deg);}
 .phone > div > span:nth-child(2):after{right:0; border-radius: 8px 9px 6px 10px ; transform: rotateZ(11deg);}
-
 
 
 
