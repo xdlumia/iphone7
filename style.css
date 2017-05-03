@@ -34,7 +34,7 @@ body {
     background:#000;
     left: 5px;
     top: 5px;
-    /*background-image: -webkit-linear-gradient(-27deg,#444,#000 10%, #000 42%, #333, #000 57%, #000 91%, #444);*/
+    background-image: -webkit-linear-gradient(-27deg,#444,#000 10%, #000 42%, #333, #000 57%, #000 91%, #444);
     box-shadow: inset # 0 0 0 4px, #555 0px 0 3px 0px, #222 -3px 2px, #000 -5px 5px, #fff -7px 6px 1px, #6D6D6D -7px 6px 9px;
     box-shadow: 0 0px 5px 3px rgba(0,0,0,.4);
     -webkit-transform: translateZ(1px);
@@ -44,10 +44,60 @@ body {
     width: 850px;
     height: 1735px;
     border-radius: 115px;
-    padding:10px 15px;
+    padding:0px 0px;
     margin:0 auto;
 }
-.front-bg{ background: #000; height: 100%; box-sizing: border-box; border-radius: 110px; padding:185px 0; box-shadow:0 5px 20px 12px rgba(255,255,255,.35) }
+.mute {
+    position: absolute;
+    background: #000;
+    top: 200px;
+    left: -6px;
+    border-radius: 8px 0 0 8px;
+    width: 10px;
+    height: 70px;
+    background: -webkit-radial-gradient(#ccc, #000 90%);
+     background: radial-gradient(#ccc, #000 90%); 
+
+    background-position: -1px -1px;
+}
+.volume{position: absolute; top:360px; left:-6px;}
+.volume span{
+    position: absolute;
+    background: #000;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0 0 8px;
+    width: 10px;
+    height: 132px;
+    background: -webkit-radial-gradient(#aaa 0%, #010101 100%, #000 0%);
+    /*background: radial-gradient(#ccc, #000 90%); */
+    background-position: -1px -1px;
+}
+.volume span:nth-child(2){
+    top:163px;
+}
+.onoff{
+    position: absolute;
+    background: #000;
+    top: 376px;
+    right: -6px;
+    border-radius: 0 8px 8px 0;
+    width: 10px;
+    height: 132px;
+    background: -webkit-radial-gradient(#aaa 0%, #010101 100%, #000 0%);
+    /*background: radial-gradient(#ccc, #000 90%); */
+    background-position: -1px -1px;
+}
+
+.front-bg {
+    background: #000;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 110px;
+    padding: 185px 0;
+    box-shadow: inset 5px 5px 20px 5px rgba(255, 255, 255, .35)
+}
+
 .front .speaker{position: absolute; top:97px;left:50%; margin-left: -76px;  width: 152px; height: 14px; background: #555;box-shadow: inset 0 0 4px #222; border-radius: 7px; }
 .front .camera{position: absolute; width: 30px; height: 30px; top:-9px; left:-76px; background: #111; border-radius: 50%; box-shadow:inset #666 -5px 2px 9px -2px; overflow: hidden;}
 .front .camera span{position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); width: 20px;    background: -webkit-radial-gradient(#E1E4F5, #0D2B69 33%);
@@ -114,7 +164,7 @@ body {
 .screen .battery > div{ display: inline-block;padding:1px;box-sizing: border-box; width: 50px; height: 18px;border:1px solid #fff; border-radius:2px; }
 .screen .battery > div span:nth-child(1){display: block; background: #fff; width: 90%; height: 100%;}
 .screen .battery > div span:nth-child(2){position: absolute;top:4px;border-radius: 0 3px 3px 0; left:100%; background: #fff; height: 9px; width: 4px;}
-.lock-statu .times{text-align: center;}
+.lock-statu .times{text-align: center; margin-top: 175px;}
 .lock-statu .time{ margin-top: 80px; font-size: 168px; line-height: 160px; color: #fff; text-align: center;}
 .lock-statu .time i{position: relative; display: inline-block; width: 12px; height:90px; margin:0 20px; }
 .lock-statu .time i:after {
@@ -346,7 +396,6 @@ a.icon > div *:after{position: absolute; content: ""; display: block; }
     top: 12px;
     border-radius: 16px 16px 5px 5px
 }
-
 .phone > div > span:nth-child(1){ width: 97px; height: 20px; overflow: hidden; }
 .phone > div > span:nth-child(1):nth-child(1):before{width: 97px; height: 40px; background: #fff; border-radius: 50%;}
 .phone > div > span:nth-child(2){ width: 100%; height: 100%; }
@@ -354,6 +403,28 @@ a.icon > div *:after{position: absolute; content: ""; display: block; }
 .phone > div > span:nth-child(2):after{bottom:5px; width: 28px; height: 20px; background: #fff;  }
 .phone > div > span:nth-child(2):before{left:0; border-radius: 9px 0px 10px 7px ; transform: rotateZ(-11deg);}
 .phone > div > span:nth-child(2):after{right:0; border-radius: 8px 9px 6px 10px ; transform: rotateZ(11deg);}
+
+
+
+/*相机图标*/
+.ico-camera{
+    background: -webkit-linear-gradient(top, #f7f7f7 0%, #898b91 100%);
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #898b91 100%);
+    background: -ms-linear-gradient(top, #f7f7f7 0%, #898b91 100%);
+    background: -o-linear-gradient(top, #f7f7f7 0%, #898b91 100%);
+    background: linear-gradient(top, #f7f7f7 0%, #898b91 100%);
+}
+.ico-camera >div{position: absolute; bottom: 36px; width: 84px; height: 45px; background:#333; left:18px;}
+.ico-camera >div span:nth-child(1){width:100%; height: 6px; background: #333; top:-9px; border-radius: 5px 5px 0 0 }
+.ico-camera >div span:nth-child(2){width:100%; height: 6px; background: #333; bottom:-9px; border-radius: 0 0 5px 5px}
+.ico-camera >div:before{width:30px; height: 30px; border:3px solid #c7c9cb; border-radius: 50%; left:50%; top:50%; transform: translate(-50%,-50%);}
+.ico-camera >div:after{width:4px; height: 4px; background:#ffc207; border-radius: 50%; right: 21px; top:4px;}
+.ico-camera >div span:nth-child(3){width:44px; height: 15px; background:#333; left:50%; margin-left: -22px; top:-18px; border-radius: 10px 10px 0 0 }
+.ico-camera >div span:nth-child(1):before{top:-6px; left:5px; width:8px; height: 3px; background: #333; border-radius: 2px 2px 0 0 }
+
+
+
+
 
 
 
