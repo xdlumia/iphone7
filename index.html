@@ -39,7 +39,7 @@
 	               </div>
 				 </div>
 			    <!-- 锁屏状态 -->	
-				<div class="lock-statu">
+				<div class="lock-statu act">
 				 
 				 <!-- 时间 -->
 				 <div class="times">
@@ -54,7 +54,7 @@
 				<div class="unlock">
 
 					 <!-- 图标内容 -->
-					 <div class="content swiper-container">
+					 <div class="content swiper-container act">
 					  	<div class="swiper-wrapper">
 						 	<ul class="swiper-slide">
 							 	<li>
@@ -74,7 +74,7 @@
 							 		<div class="name">QQ</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href="">
+							 		<a class="icon">
 							 			<div class="wechat">
 							 				<span class="big">
 							 					<span></span>
@@ -87,24 +87,38 @@
 							 		<div class="name">微信</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
+							 		<a class="icon">
+							 			<div class="keep">
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">Keep</div>
+							 	</li>
+							 	<li>
+							 		<a class="icon">
+							 			<div class="ithome">
+							 				<span><em></em></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">IT之家</div>
+							 	</li>
+							 	<li>
+							 		<a class="icon">
+							 			<div class="duokan"><span></span></div>
+							 		</a>
+							 		<div class="name">多看阅读</div>
+							 	</li>
+							 	<li>
+							 		<a class="icon"></a>
 							 		<div class="name">电话</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
-							 	</li>
-							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
-							 	</li>
-							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
-							 	</li>
-							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="weather">
+							 				
+							 			</div>
+							 		</a>
+							 		<div class="name">天气</div>
 							 	</li>
 							 	<li>
 							 		<a class="icon" href=""></a>
@@ -158,7 +172,7 @@
 							 		<div class="name">电话</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon"></a>
+							 		<a class="icon" href=""></a>
 							 		<div class="name">电话</div>
 							 	</li>
 							 	<li>
@@ -170,7 +184,7 @@
 					    <!-- Add Pagination -->
        					<div class="swiper-pagination"></div>
 					 </div>
-					 <div class="dock-bar">
+					 <div class="dock-bar act">
 					    <div class="glassbg"></div>
 					 	<ul>
 					 		<li>
@@ -194,12 +208,20 @@
 					 			<div class="name">相机</div>
 					 		</li>
 					 		<li>
-					 			<a class="icon" href=""></a>
-					 			<div class="name">电话</div>
+					 			<a class="icon">
+					 				<div class="email">
+					 					<div></div>
+					 				</div>
+					 			</a>
+					 			<div class="name">邮件</div>
 					 		</li>
 					 		<li>
-					 			<a class="icon" href=""></a>
-					 			<div class="name">电话</div>
+					 			<a class="icon">
+					 				<div class="message">
+					 					<span></span>
+					 				</div>
+					 			</a>
+					 			<div class="name">短信</div>
 					 		</li>
 					 	</ul>
 					 </div>
@@ -240,12 +262,7 @@
 
 
     $('.home span').on('click',function(){
-    	$('.lock-statu').addClass('actscale');
-    	$('.content').addClass('actscale1');
-    	$('.dock-bar').addClass('moveY');
-    	$('.swiper-pagination').addClass('moveY');
-    	$('.screen .lock').addClass('act');
-    	$('.screen .tatus-time').addClass('act');
+    	$('.lock-statu,.content,.dock-bar,.swiper-pagination,.screen .lock,.screen .tatus-time').addClass('act');
     	setTimeout(function(){
     		$('.lock-statu').hide();
     	},500)

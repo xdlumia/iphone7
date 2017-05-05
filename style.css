@@ -28,6 +28,7 @@ body {
 /*.wrap{ transform: scale(0.5); margin-top: -300px;}*/
 
 /*锁屏界面*/
+
 .front {
     position: relative;
     background:#000;
@@ -423,11 +424,172 @@ a.icon > div *:after{position: absolute; content: ""; display: block; }
 
 
 
+/*keep图标*/
+.keep{ background:#574e5f; }
+.keep *{ border-radius: 50%; }
+.keep:before,
+.keep:after{content: ""; background: #fff;border-radius:5px; position: absolute; width: 10px;}
+.keep:before{height: 62px; left:29px; top:29px;}
+.keep:after {
+    height: 34px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius:5px 5px 0 0;
+    right: 34px;
+    top:24px;
+}
+
+.keep span {
+    position: absolute;
+    left: 38px;
+    top: 62px;
+    width: 48px;
+    height: 48px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.keep span:before,
+.keep span:after{background: #fff; width: 10px; height: 48px; background: #fff;border-radius: 5px; -webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+transform-origin: 0 0;}
+.keep span:before {
+    -webkit-transform: rotateZ(-90deg);
+    -ms-transform: rotateZ(-90deg);
+    -o-transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg);
+    left:1px;
+    top:9px;
+}
 
 
+/*it之家图标*/
+.ithome {background: #d22222; }
+.ithome:before {
+    content: "";
+    position: absolute;
+    border-bottom: 6px solid transparent;
+    border-top:6px solid transparent;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    width: 0;
+    height: 0;
+    border-right-color: #fff;
+    border-top-color: #fff;
+    right: 40px;
+    bottom: 24px;
+}
 
+.ithome > span {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 78px;
+    height: 54px;
+    background: #fff;
+    border-radius: 5px;
+}
+.ithome >span >em{position: absolute; width: 11px; height: 40px; background:#d22222; top:7px; left:16px; }
+.ithome >span:before,
+.ithome >span:after{ background: #d22222; }
+.ithome >span:before{ height: 11px; width: 31px; top:7px;left:36px; }
+.ithome >span:after{ width: 11px; height: 30px;bottom:7px;left:46px; }
 
+/*多看阅读*/
+.duokan {
+    background: -webkit-linear-gradient(top, #fdac39 0%, #ea700d 100%);
+    background: -ms-linear-gradient(top, #fdac39 0%, #ea700d 100%);
+    background: linear-gradient(top, #fdac39 0%, #ea700d 100%);
+}
+.duokan:before,
+.duokan:after {
+    position: absolute;
+    content: "";
+    background: -webkit-linear-gradient(top, #fffaea 0%, #fce2ba 100% );
+    background: -ms-linear-gradient(top, #fffaea 0%, #fce2ba 100%, );
+    background: linear-gradient(top, #fffaea 0%, #fce2ba 100%, );
+    z-index: 2
+}
+.duokan:before{ width: 25px; height: 25px; border-radius: 50%; left:27px; top:32px; }
+.duokan:after{ width: 5px; height: 19px; top:36px; right: 29px;  }
+.duokan span {
+    width: 65px;
+    height: 65px;
+    background: -webkit-linear-gradient(top, #fffaea 0%, #fce2ba 100%);
+    background: -ms-linear-gradient(top, #fffaea 0%, #fce2ba 100%, );
+    background: linear-gradient(top, #fffaea 0%, #fce2ba 100%, );
+    border-radius: 50%;
+    left:27px;
+    bottom: 28px;
+    z-index: 0;
 
+}
+.duokan span:before {
+    width: 50px;
+    height: 50px;
+    background: -webkit-linear-gradient(top, #f89d2e 0%, #ef8119 100%);
+    background: -ms-linear-gradient(top, #f89d2e 0%, #ef8119 100%, );
+    background: linear-gradient(top, #f89d2e 0%, #ef8119 100%, );
+    border-radius: 50%;
+    right: 4px;
+    bottom: 8px;
+}
+
+.duokan span:after {
+    width: 66px;
+    height: 50px;
+    background: -webkit-linear-gradient(top, #fba635 0%, #f28a20 100%);
+    background: -ms-linear-gradient(top, #fba635 0%, #f28a20 100%, );
+    background: linear-gradient(top, #fba635 0%, #f28a20 100%, );
+    top:-10px;
+    z-index: 1
+}
+/*邮件图标*/
+.email{ background:-webkit-linear-gradient(top, #1d62f0 0%, #1ad5fd 100%); }
+.email >div{position: absolute;background: #fff;  width:80px; height: 51px; overflow: hidden; left:50%; top:50%; -webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%); }
+.email >div:before,
+.email >div:after{ width: 58px; height: 58px; transform:rotate(45deg); border-radius: 8px; background: #fff;}
+.email >div:before{left:11px;bottom:24px; z-index: 3;box-shadow: 0 0 0 3px #1ca4f7;}
+.email >div:after{left:11px;bottom:-31px; z-index: 0;box-shadow: 0 0 0 3px #1ca4f7;}}
+.email >div span{width: 56px; height: 56px; top:-3px; z-index:1}
+
+/*短信图标*/
+
+.message {
+    background: -webkit-linear-gradient(top, #67ff81 0%, #01b41f 100%);
+    background: -ms-linear-gradient(top, #67ff81 0%, #01b41f 100%, );
+    background: linear-gradient(top, #67ff81 0%, #01b41f 100%, );
+}
+.message span {
+    width: 88px;
+    height: 72px;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.message:before{ position: absolute; content: "";bottom:24px; left: 39px; width: 20px; height: 20px; transform: skew(-50deg) rotate(-35deg); background: #fff;}
+
+/*天气图标*/
+.weather{background: -webkit-linear-gradient(top, #1d62f0 0%, #1ad6fd 100%);
+    background: -ms-linear-gradient(top, #1d62f0 0%, #1ad6fd 100%, );
+    background: linear-gradient(top, #1d62f0 0%, #1ad6fd 100%, );}
 
 
 
@@ -466,14 +628,14 @@ a{background: #fff !important}
 .screen .tatus-time.act{opacity: 1}
 
 /*解锁动画*/
-.actscale {
+.lock-statu.act{
     -webkit-transform: scale(.5);
     -ms-transform: scale(.5);
     -o-transform: scale(.5);
     transform: scale(.5);
     opacity: 0;
 }
-.actscale1 li {
+.act li {
     -webkit-transform: scale(1) !important;
     -ms-transform: scale(1) !important;
     -o-transform: scale(1) !important;
@@ -481,4 +643,5 @@ a{background: #fff !important}
     opacity: 1 !important;
 }
 
-.moveY{ transform: translate(0); }
+.dock-bar.act,
+.swiper-pagination.act{ transform: translate(0); }
