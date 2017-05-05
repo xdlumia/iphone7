@@ -28,7 +28,7 @@ body {
 /*.wrap{ transform: scale(0.5); margin-top: -300px;}*/
 
 /*锁屏界面*/
-
+.tips-text{position: fixed; color: #000; font-size: 16px; left:20px; top:20px;}
 .front {
     position: relative;
     background:#000;
@@ -585,6 +585,83 @@ transform: translate(-50%,-50%); }
     transform: translate(-50%, -50%);
 }
 .message:before{ position: absolute; content: "";bottom:24px; left: 39px; width: 20px; height: 20px; transform: skew(-50deg) rotate(-35deg); background: #fff;}
+.clock{ background: #1e1e1f; }
+.clock .clockinfo {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    background: #f4f4f7;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.clock .clockinfo:after {
+    position: absolute;
+    border: 3px solid #262626;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #fb7e01;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+}
+.clock .clockinfo #number{ width: 104px; height: 104px; position: absolute; }
+.clock .clockinfo #number div {
+    position: absolute;
+    width: 2px;
+    height: 104px;
+    left: 50%;
+    top:0;
+    padding:5px;
+    box-sizing: border-box;
+    margin-left:-1px;
+    text-align: center;
+    text-indent: -10px;
+}
+
+
+.clock .clockinfo #number div span {
+    color: #000;
+    font-size: 10px;
+    letter-spacing: -1px;
+    font-family: 'Helvetica';
+}
+.clock #houre{position: absolute; width: 2px; margin-left: -1px; height: 35px; background: #000;padding:0; left:50%; top:16px; transform-origin: center 35px; }
+.clock #minute{position: absolute;margin-left: -1px; width: 2px; height: 45px; background: #000;padding:0; left:50%; top:4px;transform-origin: center 47px;}
+.clock #second{position: absolute;margin-left: -1px; width: 1px; height: 60px; background:#fb7e01; padding:0; left:50%; top:5px; transform-origin: center 46px }
+
+.clock .clockinfo #number{}
+.clock .clockinfo #number div:nth-child(2){transform: rotate(30deg);}
+.clock .clockinfo #number div:nth-child(2) span{transform: rotate(-30deg);}
+.clock .clockinfo #number div:nth-child(3){transform: rotate(60deg);}
+.clock .clockinfo #number div:nth-child(3) span{transform: rotate(-60deg);}
+.clock .clockinfo #number div:nth-child(4){transform: rotate(90deg);}
+.clock .clockinfo #number div:nth-child(4) span{transform: rotate(-90deg);}
+.clock .clockinfo #number div:nth-child(5){transform: rotate(120deg);}
+.clock .clockinfo #number div:nth-child(5) span{transform: rotate(-120deg);}
+.clock .clockinfo #number div:nth-child(6){transform: rotate(150deg);}
+.clock .clockinfo #number div:nth-child(6) span{transform: rotate(-150deg);}
+.clock .clockinfo #number div:nth-child(7){transform: rotate(180deg);}
+.clock .clockinfo #number div:nth-child(7) span{transform: rotate(-180deg);}
+.clock .clockinfo #number div:nth-child(8){transform: rotate(210deg);}
+.clock .clockinfo #number div:nth-child(8) span{transform: rotate(-210deg);}
+.clock .clockinfo #number div:nth-child(9){transform: rotate(240deg);}
+.clock .clockinfo #number div:nth-child(9) span{transform: rotate(-240deg);}
+.clock .clockinfo #number div:nth-child(10){transform: rotate(270deg);}
+.clock .clockinfo #number div:nth-child(10) span{transform: rotate(-270deg);}
+.clock .clockinfo #number div:nth-child(11){transform: rotate(300deg);}
+.clock .clockinfo #number div:nth-child(11) span{transform: rotate(-300deg);}
+.clock .clockinfo #number div:nth-child(12){transform: rotate(330deg);}
+.clock .clockinfo #number div:nth-child(12) span{transform: rotate(-330deg);}
+
 
 /*天气图标*/
 .weather{background: -webkit-linear-gradient(top, #1d62f0 0%, #1ad6fd 100%);
