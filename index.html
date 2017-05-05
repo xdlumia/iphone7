@@ -13,6 +13,7 @@
 </head>
 <body>
 	<div class="wrap">
+	    <div class="tips-text">纯css3写的iphone手机模板<br>请用webkit核心浏览器打开,<br>请把浏览器页面缩小到50%查看效果更佳(ctry+鼠标滚轮键) <br>可以点击home键试一试<br>讨论+ 605233966 qq群<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=777feed0ad60bf6ae1d933d518629176af89c391393ba1c11e127f7493d2d944"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Web前端" title="Web前端"></a></div>
 		<div class="front">
 		<div class="mute"></div>
 		<div class="volume">
@@ -125,8 +126,30 @@
 							 		<div class="name">电话</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="clock">
+							 				<div class="clockinfo">
+							 					<div id="number">
+							 						<div><span>12</span></div>
+							 						<div><span>1</span></div>
+							 						<div><span>2</span></div>
+							 						<div><span>3</span></div>
+							 						<div><span>4</span></div>
+							 						<div><span>5</span></div>
+							 						<div><span>6</span></div>
+							 						<div><span>7</span></div>
+							 						<div><span>8</span></div>
+							 						<div><span>9</span></div>
+							 						<div><span>10</span></div>
+							 						<div><span>11</span></div>
+						 						</div>
+							 					<div id="houre"></div>
+							 					<div id="minute"></div>
+							 					<div id="second"></div>
+							 				</div>
+							 			</div>
+							 		</a>
+							 		<div class="name">时钟</div>
 							 	</li>
 							 	<li>
 							 		<a class="icon" href=""></a>
@@ -242,6 +265,7 @@
     var aweek = week.split('')
     var oH=myDate.getHours();
     var oM=myDate.getMinutes();
+    var oS=myDate.getSeconds();
     var oMon=myDate.getMonth()+1;
     var oDay=myDate.getDate();
     var i = myDate.getDay()-1;
@@ -260,7 +284,6 @@
     });
 
 
-
     $('.home span').on('click',function(){
     	$('.lock-statu,.content,.dock-bar,.swiper-pagination,.screen .lock,.screen .tatus-time').addClass('act');
     	setTimeout(function(){
@@ -269,6 +292,25 @@
     	
     })
     
+alert
+  // 时钟
+function colornum(){
+  var oHoure=document.getElementById("houre");
+    var oMinute=document.getElementById("minute");
+    var oSecond=document.getElementById("second");
+
+    var nowTime=new Date();
+    var nowHoure=nowTime.getHours();
+    var nowMinute=nowTime.getMinutes();
+    var nowSecond=nowTime.getSeconds();
+    var houreDeg=(nowMinute/60)*30;
+    var minuteDeg=(nowSecond/60)*6;
+    oHoure.style.WebkitTransform="rotate("+ (nowHoure * 30+houreDeg) + "deg)";
+    oMinute.style.WebkitTransform="rotate("+ (nowMinute * 6+ minuteDeg) + "deg)";
+    oSecond.style.WebkitTransform="rotate("+ (nowSecond * 6) + "deg)";
+}
+colornum();
+setInterval(colornum,1000);
 </script>
 </body>
 </html>
