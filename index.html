@@ -13,7 +13,6 @@
 </head>
 <body>
 	<div class="wrap">
-	    <div class="tips-text">纯css3写的iphone手机模板<br>请用webkit核心浏览器打开,<br>请把浏览器页面缩小到50%查看效果更佳(ctry+鼠标滚轮键) <br>可以点击home键试一试<br>讨论+ 605233966 qq群<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=777feed0ad60bf6ae1d933d518629176af89c391393ba1c11e127f7493d2d944"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Web前端" title="Web前端"></a></div>
 		<div class="front">
 		<div class="mute"></div>
 		<div class="volume">
@@ -25,7 +24,10 @@
 		    <div class="speaker"><div class="camera"><span></span></div></div>
             <div class="home"><span></span></div>
 	        <!-- 屏幕 -->
-			<div class="screen">
+	        <!-- 熄屏状态 -->
+	        <div class="putout"></div>
+
+			<div class="screen"> 
 			    <!-- 状态栏 -->
 				 <div class="status-bar">
 				   <div class="status-left"><span class="signal"></span>中国移动</div>
@@ -40,7 +42,7 @@
 	               </div>
 				 </div>
 			    <!-- 锁屏状态 -->	
-				<div class="lock-statu act">
+				<div class="lock-statu">
 				 
 				 <!-- 时间 -->
 				 <div class="times">
@@ -55,11 +57,11 @@
 				<div class="unlock">
 
 					 <!-- 图标内容 -->
-					 <div class="content swiper-container act">
+					 <div class="content swiper-container">
 					  	<div class="swiper-wrapper">
 						 	<ul class="swiper-slide">
 							 	<li>
-							 		<a class="icon" href="">
+							 		<a class="icon">
 							 			<div class="qq">
 							 				<div class="head">
 							 					<span class="eye"></span>
@@ -110,21 +112,25 @@
 							 		<div class="name">多看阅读</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon"></a>
-							 		<div class="name">电话</div>
+							 	    <div class="mes-tips">6</div> 
+							 		<a class="icon">
+							 			<div class="ico-tips">
+							 				<span><em></em></span>
+							 				<span></span>
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">提示</div>
 							 	</li>
 							 	<li>
 							 		<a class="icon">
 							 			<div class="weather">
-							 				
+							 				<div> <span></span></div>
 							 			</div>
 							 		</a>
 							 		<div class="name">天气</div>
 							 	</li>
-							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
-							 	</li>
+
 							 	<li>
 							 		<a class="icon">
 							 			<div class="clock">
@@ -152,62 +158,165 @@
 							 		<div class="name">时钟</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="calendar">
+							 				<span class="ico-week">星期四</span>
+							 				<span class="ico-day">4</span>
+							 			</div>
+							 		</a>
+							 		<div class="name">日历</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-facebook">
+							 				<span><em></em></span>
+							 				<b></b>
+							 			</div>
+							 		</a>
+							 		<div class="name">Facebook</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-youtube"><span></span></div>
+							 		</a>
+							 		<div class="name">YouTube</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-chrome">
+							 				<div></div>
+							 			</div>
+							 		</a>
+							 		<div class="name">Chrome</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 	    <div class="mes-tips">1</div>
+							 		<a class="icon">
+							 			<div class="ico-amap">
+							 				<span></span>
+							 				<div class="feiji">
+							 					<em></em>
+							 					<em></em>
+							 				</div>
+							 			</div>
+							 		</a>
+							 		<div class="name">高德地图</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-ele">
+							 				<div><span></span></div>
+							 			</div>
+							 		</a>
+							 		<div class="name">饿了吗</div>
 							 	</li>
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-mistore">
+							 				<span></span>
+							 				<span></span>
+							 				<span></span>
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">小米商城</div>
 							 	</li>
-
+							 	<li>
+							 	    <div class="mes-tips">6</div> 
+							 		<a class="icon">
+							 			<div class="ico-didi">
+							 				<span><em></em></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">滴滴出行</div>
+							 	</li>
+							 	<li>
+							 		<a class="icon">
+							 			<div class="ico-ofo">
+							 				<div><span><em></em></span></div>
+							 			</div>
+							 		</a>
+							 		<div class="name">ofo共享单车</div>
+							 	</li>
+							 	<!-- Authenticator -->
+							 	<li>
+							 		<a class="icon">
+							 			<div class="ico-authenticator">
+							 				<div><span><em></em></span></div>
+							 			</div>
+							 		</a>
+							 		<div class="name">Authenticator</div>
+							 	</li>	
+							 	<!-- word -->
+							 	<li>
+							 		<a class="icon">
+							 			<div class="ico-word">
+							 				<span></span>
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">Word</div>
+							 	</li>
 						 	</ul>
 						 	<ul class="swiper-slide">
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-gcloud">
+							 				<span></span>
+							 				<span></span>
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">云端硬盘</div>
 							 	</li>
+                                <!-- FaceTime -->
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-facetime">
+							 				<span><em></em></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">FaceTime</div>
 							 	</li>
+							 	<!-- 提醒事项 -->
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-dooo">
+							 				<span></span>
+							 				<span></span>
+							 				<span></span>
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">提醒事项</div>
 							 	</li>
+							 	<!-- 备忘录 -->
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-note">
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">备忘录</div>
 							 	</li>
+							 	<!-- 计算器 -->
 							 	<li>
-							 		<a class="icon" href=""></a>
-							 		<div class="name">电话</div>
+							 		<a class="icon">
+							 			<div class="ico-calc">
+							 				<span></span>
+							 				<span></span>
+							 				<span></span>
+							 				<span></span>
+							 			</div>
+							 		</a>
+							 		<div class="name">计算器</div>
 							 	</li>
 						 	</ul>
 					    </div>
 					    <!-- Add Pagination -->
        					<div class="swiper-pagination"></div>
 					 </div>
-					 <div class="dock-bar act">
+					 <div class="dock-bar">
 					    <div class="glassbg"></div>
 					 	<ul>
 					 		<li>
@@ -253,7 +362,7 @@
 			</div>
 		</div>
 	</div>
-
+<div class="tips-text">纯css3写的iphone手机模板<br>请用webkit核心浏览器打开,<br>请把浏览器页面缩小到50%查看效果更佳(ctry+鼠标滚轮键) <br>可以点击home键试一试<br>讨论+ 605233966 qq群<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=777feed0ad60bf6ae1d933d518629176af89c391393ba1c11e127f7493d2d944"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Web前端" title="Web前端"></a></div>
 
 
 <script src='http://libs.baidu.com/jquery/2.1.1/jquery.min.js'></script>
@@ -261,14 +370,14 @@
 <script>
     // 获取日期
     var myDate = new Date()
-    var week = "一二三四五六日";
+    var week = "日一二三四五六";
     var aweek = week.split('')
     var oH=myDate.getHours();
     var oM=myDate.getMinutes();
     var oS=myDate.getSeconds();
     var oMon=myDate.getMonth()+1;
     var oDay=myDate.getDate();
-    var i = myDate.getDay()-1;
+    var i = myDate.getDay();
     if (oM<10) {
     	omi = "0"+oM
     }else{
@@ -279,20 +388,28 @@
 
 	$('.tatus-time').text(oH+":"+omi)
     
+    $('.ico-week').text('星期'+aweek[i])
+    $('.ico-day').text(oDay)
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
     });
 
 
     $('.home span').on('click',function(){
-    	$('.lock-statu,.content,.dock-bar,.swiper-pagination,.screen .lock,.screen .tatus-time').addClass('act');
+
+    	
+    	if($('.putout').css('display') === 'block'){
+    		$('.putout').hide();
+    	}else{
+    		$('.lock-statu,.content,.dock-bar,.swiper-pagination,.screen .lock,.screen .tatus-time').addClass('act');
     	setTimeout(function(){
     		$('.lock-statu').hide();
     	},500)
-    	
+    	}
     })
     
-alert
+
+
   // 时钟
 function colornum(){
   var oHoure=document.getElementById("houre");
@@ -311,6 +428,12 @@ function colornum(){
 }
 colornum();
 setInterval(colornum,1000);
+
+$('.onoff').on('click',function(){
+	$('.lock-statu,.content,.dock-bar,.swiper-pagination,.screen .lock,.screen .tatus-time').removeClass('act');
+	$('.lock-statu').show();
+	$('.putout').show()
+})
 </script>
 </body>
 </html>
