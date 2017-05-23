@@ -15,7 +15,12 @@ ul,li{list-style: none;}
 a{color: #fff;}
 @font-face {
     font-family: Helvetica;
-    src: url(HelveticaNeue-UltraLight.otf) format('TrueType'),
+    src: url('PingFang Regular.ttf') format('TrueType');
+  font-weight: 200;
+}
+@font-face {
+    font-family: Helvetica;
+    src: url('HelveticaNeue-UltraLight.otf') format('TrueType'),
     url('PingFang Regular.ttf') format('truetype');
   font-weight: 200;
 }
@@ -25,7 +30,7 @@ body {
   color: #333;
   letter-spacing: 2px;
 }
-/*.wrap{ transform: scale(0.5); margin-top: -350px;}*/
+
 .wrap{ top:50px; position: relative; }
 /*锁屏界面*/
 .tips-text{ color: #000; text-align: center; margin: 100px; font-size: 16px;}
